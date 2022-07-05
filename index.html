@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pell's Equation Solver</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="js/index.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+    <h3>Pell's Equation Solver</h3>
+    <h4>— Smallest Positive Integer Pair Solutions</h4>
+    <form id="equation-info" name="equation-info">
+        <img src="images/pells_equation.svg" alt="Pell's Equation" /><br><br>
+
+        <label for="n-value">Value of n</label><br>
+        <input type="number" min="0" id="n-value" name="n-value" placeholder="2" required><br>
+
+        <label for="amount">1st # of pairs</label><br>
+        <input type="number" min="1" id="amount" name="amount" placeholder="1" required><br>
+
+        <br>
+        <input type="submit" value="Solve!">
+    </form>
+    <h5 id="pairs" name="pairs" />
+</body>
+</html>
